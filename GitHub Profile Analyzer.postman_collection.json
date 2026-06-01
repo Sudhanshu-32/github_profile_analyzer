@@ -1,0 +1,361 @@
+{
+  "info": {
+    "_postman_id": "03f5a0d6-4fcb-4ac6-b5b5-f0e9ceb707da",
+    "name": "GitHub Profile Analyzer",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "47116460",
+    "_collection_link": "https://go.postman.co/collection/47116460-03f5a0d6-4fcb-4ac6-b5b5-f0e9ceb707da?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Health check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://githubprofileanalyzer-production-e960.up.railway.app/",
+          "protocol": "https",
+          "host": [
+            "githubprofileanalyzer-production-e960",
+            "up",
+            "railway",
+            "app"
+          ],
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Health check",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://githubprofileanalyzer-production-e960.up.railway.app/",
+              "protocol": "https",
+              "host": [
+                "githubprofileanalyzer-production-e960",
+                "up",
+                "railway",
+                "app"
+              ],
+              "path": [
+                ""
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Length",
+              "value": "45"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 01 Jun 2026 17:47:50 GMT"
+            },
+            {
+              "key": "Etag",
+              "value": "W/\"2d-F0LEdsdRXShmlA4uM4z2JkRjf1I\""
+            },
+            {
+              "key": "Server",
+              "value": "railway-edge"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "X-Railway-Edge",
+              "value": "railway/asia-southeast1-eqsg3a"
+            },
+            {
+              "key": "X-Railway-Request-Id",
+              "value": "36s_DRZcTFeql8AGV7rehQ"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"GitHub Analyzer API is running!\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Analyze profile",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://githubprofileanalyzer-production-e960.up.railway.app/api/analyze/Sudhanshu-32",
+          "protocol": "https",
+          "host": [
+            "githubprofileanalyzer-production-e960",
+            "up",
+            "railway",
+            "app"
+          ],
+          "path": [
+            "api",
+            "analyze",
+            "Sudhanshu-32"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Analyze profile",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "https://githubprofileanalyzer-production-e960.up.railway.app/api/analyze/Sudhanshu-32",
+              "protocol": "https",
+              "host": [
+                "githubprofileanalyzer-production-e960",
+                "up",
+                "railway",
+                "app"
+              ],
+              "path": [
+                "api",
+                "analyze",
+                "Sudhanshu-32"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Length",
+              "value": "490"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 01 Jun 2026 17:48:10 GMT"
+            },
+            {
+              "key": "Etag",
+              "value": "W/\"1ea-ir7Dd96jZvePDhQKqeKlhNtZ9nk\""
+            },
+            {
+              "key": "Server",
+              "value": "railway-edge"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "X-Railway-Edge",
+              "value": "railway/asia-southeast1-eqsg3a"
+            },
+            {
+              "key": "X-Railway-Request-Id",
+              "value": "9e6qNc-HTMqrSWIgV7rehQ"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Profile updated\",\n    \"data\": {\n        \"id\": 2,\n        \"username\": \"Sudhanshu-32\",\n        \"name\": \"sudhanshu kumar\",\n        \"bio\": \"Full Stack Dev · MERN · Next.js · TypeScript · Open to work\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/199878146?v=4\",\n        \"location\": null,\n        \"blog\": null,\n        \"public_repos\": 9,\n        \"followers\": 0,\n        \"following\": 1,\n        \"top_language\": \"JavaScript\",\n        \"profile_url\": \"https://github.com/Sudhanshu-32\",\n        \"account_created_at\": \"2025-02-19T05:40:49.000Z\",\n        \"analyzed_at\": \"2026-06-01T17:48:10.000Z\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get all profiles",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://githubprofileanalyzer-production-e960.up.railway.app/api/profiles",
+          "protocol": "https",
+          "host": [
+            "githubprofileanalyzer-production-e960",
+            "up",
+            "railway",
+            "app"
+          ],
+          "path": [
+            "api",
+            "profiles"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Get all profiles",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://githubprofileanalyzer-production-e960.up.railway.app/api/profiles",
+              "protocol": "https",
+              "host": [
+                "githubprofileanalyzer-production-e960",
+                "up",
+                "railway",
+                "app"
+              ],
+              "path": [
+                "api",
+                "profiles"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Length",
+              "value": "898"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 01 Jun 2026 17:48:23 GMT"
+            },
+            {
+              "key": "Etag",
+              "value": "W/\"382-Qdw2N73gz78DH9RtmLRyhCyS0EM\""
+            },
+            {
+              "key": "Server",
+              "value": "railway-edge"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "X-Railway-Edge",
+              "value": "railway/asia-southeast1-eqsg3a"
+            },
+            {
+              "key": "X-Railway-Request-Id",
+              "value": "RzZ3b6LqRb6_87HwV7rehQ"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 2,\n            \"username\": \"Sudhanshu-32\",\n            \"name\": \"sudhanshu kumar\",\n            \"bio\": \"Full Stack Dev · MERN · Next.js · TypeScript · Open to work\",\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/199878146?v=4\",\n            \"location\": null,\n            \"blog\": null,\n            \"public_repos\": 9,\n            \"followers\": 0,\n            \"following\": 1,\n            \"top_language\": \"JavaScript\",\n            \"profile_url\": \"https://github.com/Sudhanshu-32\",\n            \"account_created_at\": \"2025-02-19T05:40:49.000Z\",\n            \"analyzed_at\": \"2026-06-01T17:48:10.000Z\"\n        },\n        {\n            \"id\": 1,\n            \"username\": \"torvalds\",\n            \"name\": \"Linus Torvalds\",\n            \"bio\": null,\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/1024025?v=4\",\n            \"location\": \"Portland, OR\",\n            \"blog\": null,\n            \"public_repos\": 11,\n            \"followers\": 305331,\n            \"following\": 0,\n            \"top_language\": \"C\",\n            \"profile_url\": \"https://github.com/torvalds\",\n            \"account_created_at\": \"2011-09-03T15:26:22.000Z\",\n            \"analyzed_at\": \"2026-06-01T16:12:23.000Z\"\n        }\n    ],\n    \"pagination\": {\n        \"total\": 2,\n        \"page\": 1,\n        \"limit\": 10,\n        \"totalPages\": 1\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get single profile",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://githubprofileanalyzer-production-e960.up.railway.app/api/profiles/torvalds",
+          "protocol": "https",
+          "host": [
+            "githubprofileanalyzer-production-e960",
+            "up",
+            "railway",
+            "app"
+          ],
+          "path": [
+            "api",
+            "profiles",
+            "torvalds"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Get single profile",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://githubprofileanalyzer-production-e960.up.railway.app/api/profiles/torvalds",
+              "protocol": "https",
+              "host": [
+                "githubprofileanalyzer-production-e960",
+                "up",
+                "railway",
+                "app"
+              ],
+              "path": [
+                "api",
+                "profiles",
+                "torvalds"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Length",
+              "value": "397"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 01 Jun 2026 17:48:32 GMT"
+            },
+            {
+              "key": "Etag",
+              "value": "W/\"18d-XLN3SSqi4EHBI64JMQ3WsbByVzM\""
+            },
+            {
+              "key": "Server",
+              "value": "railway-edge"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "X-Railway-Edge",
+              "value": "railway/asia-southeast1-eqsg3a"
+            },
+            {
+              "key": "X-Railway-Request-Id",
+              "value": "0-rdTbP9SAKW-f-hV7rehQ"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": 1,\n        \"username\": \"torvalds\",\n        \"name\": \"Linus Torvalds\",\n        \"bio\": null,\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/1024025?v=4\",\n        \"location\": \"Portland, OR\",\n        \"blog\": null,\n        \"public_repos\": 11,\n        \"followers\": 305331,\n        \"following\": 0,\n        \"top_language\": \"C\",\n        \"profile_url\": \"https://github.com/torvalds\",\n        \"account_created_at\": \"2011-09-03T15:26:22.000Z\",\n        \"analyzed_at\": \"2026-06-01T16:12:23.000Z\"\n    }\n}"
+        }
+      ]
+    }
+  ]
+}
