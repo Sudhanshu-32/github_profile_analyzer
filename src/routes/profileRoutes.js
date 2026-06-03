@@ -8,7 +8,7 @@ const usernameValidation = [
   param('username')
     .trim()
     .notEmpty().withMessage('Username cannot be empty')
-    .isLength({ min: 1, max: 39 }).withMessage('Username must be between 1 and 39 characters')
+    .isLength({ min: 1, max: 39 }).withMessage('Username must be between 1 and 50 characters')
     .matches(/^[a-zA-Z0-9-]+$/).withMessage('Username can only contain letters, numbers, and hyphens'),
   validate
 ];
